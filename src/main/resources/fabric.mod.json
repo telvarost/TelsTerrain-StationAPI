@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "terraintweaks",
+  "version": "${version}",
+
+  "name": "TerrainTweaks",
+  "description": "Tweaks ore generation, sand generation, and more! Also, allows shaping water and lava with bowls if desired.",
+  "authors": [
+    "Telvarost"
+  ],
+  "contact": {
+    "issues": "https://github.com/telvarost/TerrainTweaks-StationAPI/issues",
+    "homepage": "https://github.com/telvarost/TerrainTweaks-StationAPI/",
+    "sources": "https://github.com/telvarost/TerrainTweaks-StationAPI/"
+  },
+
+  "license": "MIT",
+  "icon": "assets/terraintweaks/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "stationapi:event_bus": [
+    ],
+    "stationapi:event_bus_client": [
+    ],
+    "stationapi:event_bus_server": [
+    ],
+    "gcapi3": [
+      "com.github.telvarost.terraintweaks.Config"
+    ]
+  },
+  "mixins": [
+    "terraintweaks.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3"
+  },
+
+  "recommends": {
+    "stationapi": ">=2.0.0-alpha.3",
+    "gcapi3": ">=3.0.2",
+    "modmenu": "*"
+  },
+
+  "breaks": {
+    "finalbeta": "*",
+    "unitweaks": "*"
+  }
+}
