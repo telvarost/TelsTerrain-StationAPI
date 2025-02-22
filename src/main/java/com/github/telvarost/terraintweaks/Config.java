@@ -14,5 +14,17 @@ public class Config {
                 multiplayerSynced = true
         )
         public Boolean ALLOW_SHAPING_WATER_AND_LAVA = true;
+
+        @ConfigEntry(
+                name = "Enable Biome Specific Generation",
+                multiplayerSynced = true
+        )
+        public Boolean ENABLE_BIOME_SPECIFIC_GENERATION = false;
+
+        @ConfigEntry(
+                name = "Enable Cave Sand Generation",
+                multiplayerSynced = true
+        )
+        public Boolean ENABLE_CAVE_SAND_GENERATION = false;
     }
 }
