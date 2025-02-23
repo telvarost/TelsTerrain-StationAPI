@@ -17,19 +17,19 @@ NOTE: Terrain tweaks do not affect already generated chunks.
 ### Ability to enable custom biome feature distribution (pros/cons list):
 NOTE: Soil types only effect generation if their block generation is enabled (i.e. sand, sandstone, ice, and clay). Also note that cave soil blocks only generate between Y levels 0 and 47.
 
-|      Biome      | Soil Type   |     Pros      |     Cons     |
-|:---------------:|-------------|:-------------:|:------------:|
+|      Biome      | Soil Type   | Pros          | Cons         |
+|:---------------:|-------------|:--------------|:-------------|
 |   Rainforest    | Sandy       | 150% Dungeons | 75% Pumpkins |
-|     Plains      | Sedimentary |   150% Dirt   |  50% Gravel  |
-|     Swamps      | Clayey      |  150% Gravel  |   50% Gold   |
-|      Taiga      | Icy         |   150% Coal   |   75% Dirt   |
-|     Forest      | Normal      |   150% Iron   |  50% Lapis   |
-|     Desert      | Sandy       |   200% Gold   |  50% Roses   |
+|     Plains      | Sedimentary | 150% Dirt     | 50% Gravel   |
+|     Swamps      | Clayey      | 150% Gravel   | 50% Gold     |
+|      Taiga      | Icy         | 150% Coal     | 75% Dirt     |
+|     Forest      | Normal      | 150% Iron     | 50% Lapis    |
+|     Desert      | Sandy       | 200% Gold     | 50% Roses    |
 |     Savanna     | Sandy       | 150% Redstone | 75% Dungeons |
 |     Tundra      | Icy         | 200% Diamonds | 75% Redstone |
-| Seasonal Forest | Normal      |  200% Lapis   |   75% Iron   |
-|    Shrubland    | Sedimentary | 150% Pumpkins |   75% Coal   |
-|   Ice Desert    | Icy         |  200% Roses   | 50% Diamonds |
+| Seasonal Forest | Normal      | 200% Lapis    | 75% Iron     |
+|    Shrubland    | Sedimentary | 150% Pumpkins | 75% Coal     |
+|   Ice Desert    | Icy         | 200% Roses    | 50% Diamonds |
 
 ### Ability to enable cave sand, affects the following biomes
 * Rainforest
