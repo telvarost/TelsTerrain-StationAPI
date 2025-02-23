@@ -14,7 +14,8 @@ Terrain tweaks need to be individually enabled through the config.
 Use [GlassConfigAPI](https://modrinth.com/mod/glass-config-api) to change generation settings.
 NOTE: Terrain tweaks do not affect already generated chunks.
 
-* Ability to enable custom biome feature distribution (pros/cons list):
+### Ability to enable custom biome feature distribution (pros/cons list):
+NOTE: Soil types only effect generation if their block generation is enabled (i.e. sand, sandstone, ice, and clay). Also note that cave soil blocks only generate between Y levels 0 and 47.
 
 |      Biome      | Soil Type   |     Pros      |     Cons     |
 |:---------------:|-------------|:-------------:|:------------:|
@@ -30,27 +31,27 @@ NOTE: Terrain tweaks do not affect already generated chunks.
 |    Shrubland    | Sedimentary | 150% Pumpkins |   75% Coal   |
 |   Ice Desert    | Icy         |  200% Roses   | 50% Diamonds |
 
-* Ability to enable cave sand, affects the following biomes:
-  * Rainforest
-  * Desert
-  * Savanna
+### Ability to enable cave sand, affects the following biomes
+* Rainforest
+* Desert
+* Savanna
 
-* Ability to enable cave sandstone, affects the following biomes:
-  * Plains
-  * Shrubland
+### Ability to enable cave sandstone, affects the following biomes
+* Plains
+* Shrubland
 
-* Ability to enable cave ice, affects the following biomes:
-  * Taiga
-  * Tundra
-  * Ice Desert
+### Ability to enable cave ice, affects the following biomes
+* Taiga
+* Tundra
+* Ice Desert
 
-* Ability to enable cave clay, affects the following biomes:
-  * Swamps
+### Ability to enable cave clay, affects the following biomes
+* Swamps
 
-* Ability to enable nether clay
-  * Adds a very very small amount of clay to the nether walls and ceiling
+### Ability to enable nether clay
+* Adds a very very small amount of clay to the nether walls and ceiling
 
-### Tips and Tricks (Icy Caves)
+## Tips and Tricks (Icy Caves)
 Cave ice can be really annoying to deal with. I recommend using a mod like [GoldenTweaks](https://modrinth.com/mod/goldentweaks-stationapi) to remove the ice.
 You could also use a mod like [NowObtainableRecipes](https://modrinth.com/mod/nowobtainablerecipes-stationapi) to get a sponge to soak up the water from melted ice.
 This mod also provides water shaping with a wooden bowl that you could use to remove melted ice water.
@@ -73,6 +74,6 @@ Got any suggestions on what should be added next? Feel free to share it by [crea
 
 ## Contributing
 
-Thanks for considering contributing! To get started fork this repository, make your changes, and create a PR. 
+Thanks for considering contributing! To get started fork this repository, make your changes, and create a PR.
 
 If you are new to StationAPI consider watching the following videos on Babric/StationAPI Minecraft modding: https://www.youtube.com/watch?v=9-sVGjnGJ5s&list=PLa2JWzyvH63wGcj5-i0P12VkJG7PDyo9T
