@@ -12,8 +12,32 @@ A StationAPI mod for Minecraft Beta 1.7.3 that tweaks ore generation, sand gener
 ## Terrain Features (Under Construction)
 All terrain features can be individually disabled through the config if undesired.
 
-* Biome ore generation
-* Underground pockets of sand
+* Ability to enable biome specific feature generation, affects the world as follows:
+  * Rainforest - Sandy,  150% Dungeons, 75% Pumpkins
+  * Plains     - Sandy,  150% Dirt,     75% Gravel
+  * Swamps     - Clayey, 150% Gravel,   50% Gold
+  * Taiga      - Icy,    150% Coal,     75% Dirt
+  * Forest     - Normal, 150% Iron,     50% Lapis
+  * Desert     - Sandy,  200% Gold,     50% Roses
+  * Savanna    - Sandy,  150% Redstone, 75% Dungeons
+  * Tundra     - Icy,    200% Diamonds, 75% Redstone
+  * Seasonal   - Normal, 200% Lapis,    75% Iron
+  * Shrubland  - Sandy,  150% Pumpkins, 75% Coal
+  * Ice Desert - Icy,    200% Roses,    50% Diamonds
+* Ability to enable cave sand, affects the following biomes:
+  * Rainforest
+  * Plains
+  * Desert
+  * Savanna
+  * Shrubland
+* Ability to enable cave ice, affects the following biomes:
+  * Taiga
+  * Tundra
+  * Ice Desert
+* Ability to enable cave clay, affects the following biomes:
+  * Swamps
+* Ability to enable nether clay
+  * Adds a very very small amount of clay to the nether walls and roof
 
 ## Installation using Prism Launcher
 
