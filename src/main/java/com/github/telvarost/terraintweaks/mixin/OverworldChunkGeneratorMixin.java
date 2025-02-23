@@ -144,7 +144,22 @@ public class OverworldChunkGeneratorMixin {
         if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.DESERT == biomeToDecorate) {
                 value = (int)(value * 2);
-            } else if (Biome.SWAMPLAND == biomeToDecorate) {
+            }
+        }
+
+        return value;
+    }
+
+    @ModifyConstant(
+            method = "decorate",
+            constant = @Constant(
+                    intValue = 8,
+                    ordinal = 10
+            )
+    )
+    private int terrainTweaks_decorateGoldCount(int value) {
+        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+            if (Biome.SWAMPLAND == biomeToDecorate) {
                 value = (int)(value * 0.5F);
             }
         }
@@ -182,7 +197,22 @@ public class OverworldChunkGeneratorMixin {
         if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.TUNDRA == biomeToDecorate) {
                 value = (int)(value * 2);
-            } else if (Biome.ICE_DESERT == biomeToDecorate) {
+            }
+        }
+
+        return value;
+    }
+
+    @ModifyConstant(
+            method = "decorate",
+            constant = @Constant(
+                    intValue = 7,
+                    ordinal = 1
+            )
+    )
+    private int terrainTweaks_decorateDiamondCount(int value) {
+        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+            if (Biome.ICE_DESERT == biomeToDecorate) {
                 value = (int)(value * 0.5F);
             }
         }
@@ -201,7 +231,23 @@ public class OverworldChunkGeneratorMixin {
         if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.SEASONAL_FOREST == biomeToDecorate) {
                 value = (int)(value * 2);
-            } else if (Biome.FOREST == biomeToDecorate) {
+            }
+        }
+
+        return value;
+    }
+
+    @ModifyConstant(
+            method = "decorate",
+            constant = @Constant(
+                    intValue = 6,
+                    ordinal = 0
+            )
+    )
+    private int terrainTweaks_decorateLapisCount(int value) {
+        System.out.println("Reducing Lapis");
+        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+            if (Biome.FOREST == biomeToDecorate) {
                 value = (int)(value * 0.5F);
             }
         }
@@ -220,9 +266,9 @@ public class OverworldChunkGeneratorMixin {
     public int terrainTweaks_decoratePumpkinAttempts(Random instance, int bound, Operation<Integer> original) {
         if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.SHRUBLAND == biomeToDecorate) {
-                return original.call(instance, (int)(bound * 1.5F));
-            } else if (Biome.RAINFOREST == biomeToDecorate) {
                 return original.call(instance, (int)(bound * 0.5F));
+            } else if (Biome.RAINFOREST == biomeToDecorate) {
+                return original.call(instance, (int)(bound * 1.5F));
             }
         }
 
@@ -240,9 +286,9 @@ public class OverworldChunkGeneratorMixin {
     public int terrainTweaks_decorateRoseAttempts(Random instance, int bound, Operation<Integer> original) {
         if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.ICE_DESERT == biomeToDecorate) {
-                return original.call(instance, (int)(bound * 2.0F));
-            } else if (Biome.DESERT == biomeToDecorate) {
                 return original.call(instance, (int)(bound * 0.5F));
+            } else if (Biome.DESERT == biomeToDecorate) {
+                return original.call(instance, (int)(bound * 2.0F));
             }
         }
 

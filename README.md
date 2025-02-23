@@ -3,16 +3,18 @@
 A StationAPI mod for Minecraft Beta 1.7.3 that tweaks ore generation, sand generation, and more!
 * Mod works on Multiplayer with [GlassConfigAPI](https://modrinth.com/mod/glass-config-api) version 3.0+ used to sync configs!
 
-## Water and Lava Shaping
+## Water and Lava Shaping (Enabled by Default)
 
 * Water and Lava can be shaped using wooden bowls:
   * Right click any water or lava block with a wooden bowl to lower its level
   * Lava will consume the bowl when its level is lowered, bring a lot of bowls if you want to shape lava significantly
 
-## Terrain Features (Under Construction)
-All terrain features can be individually disabled through the config if undesired.
+## Terrain Features (Disabled by Default)
+Terrain tweaks need to be individually enabled through the config.
+Use [GlassConfigAPI](https://modrinth.com/mod/glass-config-api) to change generation settings.
+NOTE: Terrain tweaks do not affect already generated chunks.
 
-* Ability to enable custom biome feature distribution:
+* Ability to enable custom biome feature distribution (pros/cons list):
 
 |      Biome      | Soil Type |     Pros      |     Cons      |
 |:---------------:|-----------|:-------------:|:-------------:|
@@ -44,7 +46,13 @@ All terrain features can be individually disabled through the config if undesire
   * Swamps
 
 * Ability to enable nether clay
-  * Adds a very very small amount of clay to the nether walls and roof
+  * Adds a very very small amount of clay to the nether walls and ceiling
+
+### Tips and Tricks (Cave Ice)
+Cave ice can be really annoying to deal with. I recommend using a mod like [GoldenTweaks](https://modrinth.com/mod/goldentweaks-stationapi) to remove the ice.
+You could also use a mod like [NowObtainableRecipes](https://modrinth.com/mod/nowobtainablerecipes-stationapi) to get a sponge to soak up the water from melted ice.
+This mod also provides water shaping with a wooden bowl that you could use to remove melted ice water.
+Another suggestion is to use an alternative light source in ice caves since torches can be knocked out.
 
 ## Installation using Prism Launcher
 
