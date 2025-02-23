@@ -54,7 +54,7 @@ NOTE: Terrain tweaks do not affect already generated chunks.
 Cave ice can be really annoying to deal with. I recommend using a mod like [GoldenTweaks](https://modrinth.com/mod/goldentweaks-stationapi) to remove the ice.
 You could also use a mod like [NowObtainableRecipes](https://modrinth.com/mod/nowobtainablerecipes-stationapi) to get a sponge to soak up the water from melted ice.
 This mod also provides water shaping with a wooden bowl that you could use to remove melted ice water.
-Another suggestion is to use an alternative light source in ice caves since torches can be knocked out.
+Another suggestion is to use an alternative light source in ice caves since torches can be knocked out easily by flowing water.
 
 ## Installation using Prism Launcher
 
