@@ -40,6 +40,12 @@ public class Config {
         public Boolean ENABLE_CAVE_SAND_GENERATION = false;
 
         @ConfigEntry(
+                name = "Enable Cave Sandstone Generation",
+                multiplayerSynced = true
+        )
+        public Boolean ENABLE_CAVE_SANDSTONE_GENERATION = false;
+
+        @ConfigEntry(
                 name = "Enable Nether Clay Generation",
                 multiplayerSynced = true
         )

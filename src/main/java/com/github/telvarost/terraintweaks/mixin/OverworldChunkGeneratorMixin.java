@@ -245,7 +245,6 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int terrainTweaks_decorateLapisCount(int value) {
-        System.out.println("Reducing Lapis");
         if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.FOREST == biomeToDecorate) {
                 value = (int)(value * 0.5F);
@@ -342,28 +341,10 @@ public class OverworldChunkGeneratorMixin {
                 }
             }
 
-            /* TerrainTweaks Ideas */
-//    DUNGEON_RAINFOREST      = DONE - Rainforest - Sandy,  150% Dungeon,  75% Pumpkin
-//    DIRT_PLAINS             = DONE - Plains     - Sandy,  150% Dirt,     75% Gravel
-//    GRAVEL_SWAMPLAND        = DONE - Swamps     - Clayey, 150% Gravel,   50% Gold
-//    COAL_TAIGA              = DONE - Taiga      - Icy,    150% Coal,     75% Dirt
-//    IRON_FOREST             = DONE - Forest     - Normal, 150% Iron,     50% Lapis
-//    GOLD_DESERT             = DONE - Desert     - Sandy,  200% Gold,     50% Rose
-//    REDSTONE_SAVANNA        = DONE - Savanna    - Sandy,  150% Redstone, 75% Dungeon
-//    DIAMOND_TUNDRA          = DONE - Tundra     - Icy,    200% Diamond,  75% Redstone
-//    LAPIS_SEASONAL_FOREST   = DONE - Seasonal   - Normal, 200% Lapis,    75% Iron
-//    PUMPKIN_SHRUBLAND       = DONE - Shrubland  - Sandy,  150% Pumpkin,  75% Coal
-//    ICE_DESERT              = DONE - Ice Desert - Icy,    200% Rose,     50% Diamond
-
-//    CLAY_NETHER             = DONE - Nether - single clay blocks x5 the rate of solitary lava source blocks
-//    SKY                     = DONE - No tweaks
-
             if (  Config.config.ENABLE_CAVE_SAND_GENERATION
                && (  Biome.RAINFOREST    == biomeToDecorate
-                  || Biome.PLAINS        == biomeToDecorate
                   || Biome.DESERT        == biomeToDecorate
                   || Biome.SAVANNA       == biomeToDecorate
-                  || Biome.SHRUBLAND     == biomeToDecorate
                   )
             ) {
                 for(var13 = 0; var13 < 10; ++var13) {
@@ -371,6 +352,19 @@ public class OverworldChunkGeneratorMixin {
                     var15 = this.random.nextInt(8) + this.random.nextInt(40);
                     var16 = var5 + this.random.nextInt(16);
                     (new OreFeature(Block.SAND.id, 24)).generate(this.world, this.random, var14, var15, var16);
+                }
+            }
+
+            if (  Config.config.ENABLE_CAVE_SANDSTONE_GENERATION
+               && (  Biome.PLAINS        == biomeToDecorate
+                  || Biome.SHRUBLAND     == biomeToDecorate
+                  )
+            ) {
+                for(var13 = 0; var13 < 10; ++var13) {
+                    var14 = var4 + this.random.nextInt(16);
+                    var15 = this.random.nextInt(8) + this.random.nextInt(40);
+                    var16 = var5 + this.random.nextInt(16);
+                    (new OreFeature(Block.SANDSTONE.id, 24)).generate(this.world, this.random, var14, var15, var16);
                 }
             }
         }
