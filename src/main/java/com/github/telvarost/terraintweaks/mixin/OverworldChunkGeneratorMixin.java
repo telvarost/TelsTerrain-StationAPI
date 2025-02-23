@@ -88,7 +88,7 @@ public class OverworldChunkGeneratorMixin {
             if (Biome.SWAMPLAND == biomeToDecorate) {
                 value = (int)(value * 1.5F);
             } else if (Biome.PLAINS == biomeToDecorate) {
-                value = (int)(value * 0.75F);
+                value = (int)(value * 0.5F);
             }
         }
 
