@@ -19,7 +19,7 @@ NOTE: Terrain tweaks do not affect already generated chunks.
 
 |      Biome      | Soil Type   | Pros          | Cons         |
 |:---------------:|-------------|:--------------|:-------------|
-|   Rainforest    | Sandy       | 150% Dungeons | 75% Pumpkins |
+|   Rainforest    | Sandy       | 150% Dungeons | 50% Pumpkins |
 |     Plains      | Sedimentary | 150% Dirt     | 50% Gravel   |
 |     Swamps      | Clayey      | 150% Gravel   | 50% Gold     |
 |      Taiga      | Icy         | 150% Coal     | 75% Dirt     |
@@ -28,7 +28,7 @@ NOTE: Terrain tweaks do not affect already generated chunks.
 |     Savanna     | Sandy       | 150% Redstone | 75% Dungeons |
 |     Tundra      | Icy         | 200% Diamonds | 75% Redstone |
 | Seasonal Forest | Normal      | 200% Lapis    | 75% Iron     |
-|    Shrubland    | Sedimentary | 150% Pumpkins | 75% Coal     |
+|    Shrubland    | Sedimentary | 200% Pumpkins | 75% Coal     |
 |   Ice Desert    | Icy         | 200% Roses    | 50% Diamonds |
 
 * Ability to enable cave sand, affects the following biomes
