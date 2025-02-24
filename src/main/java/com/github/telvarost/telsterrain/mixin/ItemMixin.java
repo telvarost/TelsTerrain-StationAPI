@@ -1,7 +1,7 @@
-package com.github.telvarost.terraintweaks.mixin;
+package com.github.telvarost.telsterrain.mixin;
 
-import com.github.telvarost.terraintweaks.Config;
-import com.github.telvarost.terraintweaks.ModHelper;
+import com.github.telvarost.telsterrain.Config;
+import com.github.telvarost.telsterrain.ModHelper;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -24,7 +24,7 @@ public class ItemMixin {
             at = @At("HEAD"),
             cancellable = true
     )
-    public void terrainTweaks_use(ItemStack stack, World world, PlayerEntity user, CallbackInfoReturnable<ItemStack> cir) {
+    public void telsTerrain_use(ItemStack stack, World world, PlayerEntity user, CallbackInfoReturnable<ItemStack> cir) {
         if (Item.BOWL.id == stack.itemId && Config.config.ALLOW_SHAPING_WATER_AND_LAVA) {
             float var4 = 1.0F;
             float var5 = user.prevPitch + (user.pitch - user.prevPitch) * var4;

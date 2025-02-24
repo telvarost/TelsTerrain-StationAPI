@@ -1,4 +1,4 @@
-package com.github.telvarost.terraintweaks;
+package com.github.telvarost.telsterrain;
 
 public class ModHelper {
 

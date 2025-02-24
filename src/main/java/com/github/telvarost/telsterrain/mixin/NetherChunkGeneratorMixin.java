@@ -1,6 +1,6 @@
-package com.github.telvarost.terraintweaks.mixin;
+package com.github.telvarost.telsterrain.mixin;
 
-import com.github.telvarost.terraintweaks.Config;
+import com.github.telvarost.telsterrain.Config;
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.ChunkSource;
@@ -30,7 +30,7 @@ public class NetherChunkGeneratorMixin {
             ),
             cancellable = true
     )
-    public void terrainTweaks_decorateCaveSand(ChunkSource source, int x, int z, CallbackInfo ci) {
+    public void telsTerrain_decorateCaveSand(ChunkSource source, int x, int z, CallbackInfo ci) {
         if (Config.config.ENABLE_NETHER_CLAY_GENERATION) {
             int var4 = x * 16;
             int var5 = z * 16;

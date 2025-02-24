@@ -1,10 +1,10 @@
-package com.github.telvarost.terraintweaks;
+package com.github.telvarost.telsterrain;
 
 import net.glasslauncher.mods.gcapi3.api.*;
 
 public class Config {
 
-    @ConfigRoot(value = "config", visibleName = "TerrainTweaks")
+    @ConfigRoot(value = "config", visibleName = "TelsTerrain")
     public static ConfigFields config = new ConfigFields();
 
     public static class ConfigFields {

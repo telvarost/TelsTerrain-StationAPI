@@ -1,4 +1,4 @@
-# TerrainTweaks StationAPI for Minecraft Beta 1.7.3
+# TelsTerrain StationAPI for Minecraft Beta 1.7.3
 
 A StationAPI mod for Minecraft Beta 1.7.3 that tweaks ore generation, sand generation, and more!
 * Mod works on Multiplayer with [GlassConfigAPI](https://modrinth.com/mod/glass-config-api) version 3.0+ used to sync configs!
@@ -61,12 +61,12 @@ Another suggestion is to use an alternative light source in ice caves since torc
 4. Add Glass Networking to the mod folder for the instance: https://modrinth.com/mod/glass-networking
 5. (Optional) Add StationAPI to the mod folder for the instance: https://modrinth.com/mod/stationapi
 6. (Optional) Add Mod Menu to the mod folder for the instance: https://modrinth.com/mod/modmenu-beta
-7. Add this mod to the mod folder for the instance: https://github.com/telvarost/TerrainTweaks-StationAPI/releases
+7. Add this mod to the mod folder for the instance: https://github.com/telvarost/TelsTerrain-StationAPI/releases
 8. Run and enjoy! 👍
 
 ## Feedback
 
-Got any suggestions on what should be added next? Feel free to share it by [creating an issue](https://github.com/telvarost/TerrainTweaks-StationAPI/issues/new). Know how to code and want to do it yourself? Then look below on how to get started.
+Got any suggestions on what should be added next? Feel free to share it by [creating an issue](https://github.com/telvarost/TelsTerrain-StationAPI/issues/new). Know how to code and want to do it yourself? Then look below on how to get started.
 
 ## Contributing
 

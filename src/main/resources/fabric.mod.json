@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "id": "terraintweaks",
+  "id": "telsterrain",
   "version": "${version}",
 
-  "name": "TerrainTweaks",
+  "name": "TelsTerrain",
   "description": "Tweaks ore generation, sand generation, and more! Also, allows shaping water and lava with bowls if desired.",
   "authors": [
     "Telvarost"
   ],
   "contact": {
-    "issues": "https://github.com/telvarost/TerrainTweaks-StationAPI/issues",
-    "homepage": "https://github.com/telvarost/TerrainTweaks-StationAPI/",
-    "sources": "https://github.com/telvarost/TerrainTweaks-StationAPI/"
+    "issues": "https://github.com/telvarost/TelsTerrain-StationAPI/issues",
+    "homepage": "https://github.com/telvarost/TelsTerrain-StationAPI/",
+    "sources": "https://github.com/telvarost/TelsTerrain-StationAPI/"
   },
 
   "license": "MIT",
-  "icon": "assets/terraintweaks/icon.png",
+  "icon": "assets/telsterrain/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -26,11 +26,11 @@
     "stationapi:event_bus_server": [
     ],
     "gcapi3": [
-      "com.github.telvarost.terraintweaks.Config"
+      "com.github.telvarost.telsterrain.Config"
     ]
   },
   "mixins": [
-    "terraintweaks.mixins.json"
+    "telsterrain.mixins.json"
   ],
 
   "depends": {
