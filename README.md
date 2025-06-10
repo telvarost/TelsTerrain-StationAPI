@@ -44,6 +44,8 @@ NOTE: Terrain tweaks do not affect already generated chunks.
   * Ice Desert
 * Ability to enable cave clay, affects the following biomes
   * Swamps
+* Ability to enable desert stone/gravel swap
+  * Below deserts swaps stone for sandstone and gravel for sand
 * Ability to enable nether clay
   * Adds a very very small amount of clay to the nether walls and ceiling
 

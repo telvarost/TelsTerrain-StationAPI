@@ -46,6 +46,13 @@ public class Config {
         public Boolean ENABLE_CAVE_SANDSTONE_GENERATION = false;
 
         @ConfigEntry(
+                name = "Enable Desert Stone/Gravel Swap",
+                description = "Swap stone to sandstone and gravel to sand",
+                multiplayerSynced = true
+        )
+        public Boolean ENABLE_DESERT_STONE_AND_GRAVEL_SWAP = false;
+
+        @ConfigEntry(
                 name = "Enable Nether Clay Generation",
                 multiplayerSynced = true
         )

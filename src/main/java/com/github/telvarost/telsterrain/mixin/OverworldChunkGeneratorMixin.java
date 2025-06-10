@@ -303,7 +303,7 @@ public class OverworldChunkGeneratorMixin {
             ),
             cancellable = true
     )
-    public void telsTerrain_decorateCaveSand(ChunkSource source, int x, int z, CallbackInfo ci) {
+    public void telsTerrain_decorateUnderground(ChunkSource source, int x, int z, CallbackInfo ci) {
         if (  Config.config.ENABLE_CAVE_CLAY_GENERATION
            || Config.config.ENABLE_CAVE_ICE_GENERATION
            || Config.config.ENABLE_CAVE_SAND_GENERATION
@@ -365,6 +365,33 @@ public class OverworldChunkGeneratorMixin {
                     var15 = this.random.nextInt(8) + this.random.nextInt(40);
                     var16 = var5 + this.random.nextInt(16);
                     (new OreFeature(Block.SANDSTONE.id, 24)).generate(this.world, this.random, var14, var15, var16);
+                }
+            }
+        }
+
+        if (Config.config.ENABLE_DESERT_STONE_AND_GRAVEL_SWAP) {
+            int xLocation = x * 16;
+            int zLocation = z * 16;
+
+            for (int xOffset = 0; xOffset < 16; xOffset++) {
+                for (int zOffset = 0; zOffset < 16; zOffset++) {
+                    int xExact = xLocation + xOffset + 16;
+                    int zExact = zLocation + zOffset + 16;
+
+                    Biome biome = this.world.method_1781().getBiome(xExact, zExact);
+                    if (Biome.DESERT == biome) {
+                        for (int yLevel = 0; yLevel < this.world.getHeight(); yLevel++) {
+                            int blockId = this.world.getBlockId(xExact, yLevel, zExact);
+
+                            if (0 == blockId) {
+                                /* Do nothing */
+                            } else if (Block.STONE.id == blockId) {
+                                this.world.setBlockWithoutNotifyingNeighbors(xExact, yLevel, zExact, Block.SANDSTONE.id);
+                            } else if (Block.GRAVEL.id == blockId) {
+                                this.world.setBlockWithoutNotifyingNeighbors(xExact, yLevel, zExact, Block.SAND.id);
+                            }
+                        }
+                    }
                 }
             }
         }
