@@ -46,7 +46,7 @@ NOTE: Terrain tweaks do not affect already generated chunks.
   * Swamps
 * Ability to enable desert stone/gravel swap
   * Below deserts swaps stone for sandstone and gravel for sand
-  * Ability to increase sandstone blast resistance (recommended with the swap)
+* Ability to increase sandstone blast resistance (recommended if you enable desert stone swap)
 * Ability to enable nether clay
   * Adds a very very small amount of clay to the nether walls and ceiling
 
