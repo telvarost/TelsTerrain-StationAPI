@@ -57,5 +57,12 @@ public class Config {
                 multiplayerSynced = true
         )
         public Boolean ENABLE_NETHER_CLAY_GENERATION = false;
+
+        @ConfigEntry(
+                name = "Increase Sandstone Blast Resistance",
+                description = "Recommended with desert stone swap",
+                multiplayerSynced = true
+        )
+        public Boolean INCREASE_SANDSTONE_BLAST_RESISTANCE = false;
     }
 }
