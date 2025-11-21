@@ -1,4 +1,4 @@
-package com.github.telvarost.telsterrain.mixin;
+package com.github.telvarost.telsterrain.mixin.newgen;
 
 import com.github.telvarost.telsterrain.Config;
 import net.minecraft.block.Block;
@@ -31,7 +31,7 @@ public class NetherChunkGeneratorMixin {
             cancellable = true
     )
     public void telsTerrain_decorateCaveSand(ChunkSource source, int x, int z, CallbackInfo ci) {
-        if (Config.config.ENABLE_NETHER_CLAY_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_NETHER_CLAY_GENERATION) {
             int var4 = x * 16;
             int var5 = z * 16;
             int var6;

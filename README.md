@@ -2,15 +2,29 @@
 
 A StationAPI mod for Minecraft Beta 1.7.3 that tweaks ore generation, sand generation, and more!
 * Mod works on Multiplayer with [GlassConfigAPI](https://modrinth.com/mod/glass-config-api) version 3.0+ used to sync configs!
+* All changes are disabled by default, enable what you want!
 
-## Water and Lava Shaping (Enabled by Default)
+## Water and Lava Shaping
 
 * Water and Lava can be shaped using wooden bowls:
   * Right click any water or lava block with a wooden bowl to lower its level
   * Lava will consume the bowl when its level is lowered, bring a lot of bowls if you want to shape lava significantly
 
-## Terrain Features (Disabled by Default)
-Terrain tweaks need to be individually enabled through the config.
+## Old Terrain Features
+This mod adds the ability to disable any vanilla terrain decorations that you don't want!
+* For the Overworld you can now disable:
+  * Dungeon & Soil Features: dungeons, cave dirt, cave gravel, and beach clay
+  * Fluid Features: waterfalls, lavafalls, ponds of water, and ponds of lava
+  * Ores: Coal, iron, gold, diamond, lapis lazuli, and redstone
+  * Small Plants: dandelions, roses, tall grass, dead bushes, sugar cane, cacti, red mushrooms, and brown mushrooms
+  * Trees: small oak, large oak, birch, and pine
+* For the Nether you can now disable:
+  * Lava Springs/Lavafalls
+  * Fire Patches
+  * Glowstone Clusters: A & B
+  * Small Plants: red mushrooms and brown mushrooms
+
+## New Terrain Features
 Use [GlassConfigAPI](https://modrinth.com/mod/glass-config-api) to change generation settings.
 NOTE: Terrain tweaks do not affect already generated chunks.
 

@@ -1,4 +1,4 @@
-package com.github.telvarost.telsterrain.mixin;
+package com.github.telvarost.telsterrain.mixin.newgen;
 
 import com.github.telvarost.telsterrain.Config;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
@@ -46,7 +46,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int telsTerrain_decorateDungeonAttempts(int value) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.RAINFOREST == biomeToDecorate) {
                 value = (int)(value * 1.5F);
             } else if (Biome.SAVANNA == biomeToDecorate) {
@@ -65,7 +65,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int telsTerrain_decorateDirtAttempts(int value) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.PLAINS == biomeToDecorate) {
                 value = (int)(value * 1.5F);
             } else if (Biome.TAIGA == biomeToDecorate) {
@@ -84,7 +84,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int telsTerrain_decorateGravelAttempts(int value) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.SWAMPLAND == biomeToDecorate) {
                 value = (int)(value * 1.5F);
             } else if (Biome.PLAINS == biomeToDecorate) {
@@ -103,7 +103,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int telsTerrain_decorateCoalAttempts(int value) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.TAIGA == biomeToDecorate) {
                 value = (int)(value * 1.5F);
             } else if (Biome.SHRUBLAND == biomeToDecorate) {
@@ -122,7 +122,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int telsTerrain_decorateIronAttempts(int value) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.FOREST == biomeToDecorate) {
                 value = (int)(value * 1.5F);
             } else if (Biome.SEASONAL_FOREST == biomeToDecorate) {
@@ -141,7 +141,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int telsTerrain_decorateGoldAttempts(int value) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.DESERT == biomeToDecorate) {
                 value = (int)(value * 2);
             }
@@ -158,7 +158,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int telsTerrain_decorateGoldCount(int value) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.SWAMPLAND == biomeToDecorate) {
                 value = (int)(value * 0.5F);
             }
@@ -175,7 +175,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int telsTerrain_decorateRedstoneAttempts(int value) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.SAVANNA == biomeToDecorate) {
                 value = (int)(value * 1.5F);
             } else if (Biome.TUNDRA == biomeToDecorate) {
@@ -194,7 +194,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int telsTerrain_decorateDiamondAttempts(int value) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.TUNDRA == biomeToDecorate) {
                 value = (int)(value * 2);
             }
@@ -211,7 +211,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int telsTerrain_decorateDiamondCount(int value) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.ICE_DESERT == biomeToDecorate) {
                 value = (int)(value * 0.5F);
             }
@@ -228,7 +228,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int telsTerrain_decorateLapisAttempts(int value) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.SEASONAL_FOREST == biomeToDecorate) {
                 value = (int)(value * 2);
             }
@@ -245,7 +245,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     private int telsTerrain_decorateLapisCount(int value) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.FOREST == biomeToDecorate) {
                 value = (int)(value * 0.5F);
             }
@@ -263,7 +263,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     public int telsTerrain_decoratePumpkinAttempts(Random instance, int bound, Operation<Integer> original) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.SHRUBLAND == biomeToDecorate) {
                 return original.call(instance, (int)(bound * 0.5F));
             } else if (Biome.RAINFOREST == biomeToDecorate) {
@@ -283,7 +283,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     public int telsTerrain_decorateRoseAttempts(Random instance, int bound, Operation<Integer> original) {
-        if (Config.config.ENABLE_BIOME_SPECIFIC_GENERATION) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_BIOME_SPECIFIC_GENERATION) {
             if (Biome.ICE_DESERT == biomeToDecorate) {
                 return original.call(instance, (int)(bound * 0.5F));
             } else if (Biome.DESERT == biomeToDecorate) {
@@ -304,9 +304,9 @@ public class OverworldChunkGeneratorMixin {
             cancellable = true
     )
     public void telsTerrain_decorateUnderground(ChunkSource source, int x, int z, CallbackInfo ci) {
-        if (  Config.config.ENABLE_CAVE_CLAY_GENERATION
-           || Config.config.ENABLE_CAVE_ICE_GENERATION
-           || Config.config.ENABLE_CAVE_SAND_GENERATION
+        if (  Config.config.NEW_TERRAIN_GENERATION.ENABLE_CAVE_CLAY_GENERATION
+           || Config.config.NEW_TERRAIN_GENERATION.ENABLE_CAVE_ICE_GENERATION
+           || Config.config.NEW_TERRAIN_GENERATION.ENABLE_CAVE_SAND_GENERATION
         ) {
             int var4 = x * 16;
             int var5 = z * 16;
@@ -315,7 +315,7 @@ public class OverworldChunkGeneratorMixin {
             int var15;
             int var16;
 
-            if (  Config.config.ENABLE_CAVE_ICE_GENERATION
+            if (  Config.config.NEW_TERRAIN_GENERATION.ENABLE_CAVE_ICE_GENERATION
                && (  Biome.TAIGA      == biomeToDecorate
                   || Biome.TUNDRA     == biomeToDecorate
                   || Biome.ICE_DESERT == biomeToDecorate
@@ -329,7 +329,7 @@ public class OverworldChunkGeneratorMixin {
                 }
             }
 
-            if (  Config.config.ENABLE_CAVE_CLAY_GENERATION
+            if (  Config.config.NEW_TERRAIN_GENERATION.ENABLE_CAVE_CLAY_GENERATION
                && (  Biome.SWAMPLAND     == biomeToDecorate
                   )
             ) {
@@ -341,7 +341,7 @@ public class OverworldChunkGeneratorMixin {
                 }
             }
 
-            if (  Config.config.ENABLE_CAVE_SAND_GENERATION
+            if (  Config.config.NEW_TERRAIN_GENERATION.ENABLE_CAVE_SAND_GENERATION
                && (  Biome.RAINFOREST    == biomeToDecorate
                   || Biome.DESERT        == biomeToDecorate
                   || Biome.SAVANNA       == biomeToDecorate
@@ -355,7 +355,7 @@ public class OverworldChunkGeneratorMixin {
                 }
             }
 
-            if (  Config.config.ENABLE_CAVE_SANDSTONE_GENERATION
+            if (  Config.config.NEW_TERRAIN_GENERATION.ENABLE_CAVE_SANDSTONE_GENERATION
                && (  Biome.PLAINS        == biomeToDecorate
                   || Biome.SHRUBLAND     == biomeToDecorate
                   )
@@ -369,7 +369,7 @@ public class OverworldChunkGeneratorMixin {
             }
         }
 
-        if (Config.config.ENABLE_DESERT_STONE_AND_GRAVEL_SWAP) {
+        if (Config.config.NEW_TERRAIN_GENERATION.ENABLE_DESERT_STONE_AND_GRAVEL_SWAP) {
             int xLocation = x * 16;
             int zLocation = z * 16;
 

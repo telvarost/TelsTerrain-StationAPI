@@ -6,8 +6,10 @@
   "mixins": [
     "ItemMixin",
     "LiquidBlockMixin",
-    "NetherChunkGeneratorMixin",
-    "OverworldChunkGeneratorMixin",
+    "newgen.NetherChunkGeneratorMixin",
+    "newgen.OverworldChunkGeneratorMixin",
+    "oldgen.NetherChunkGeneratorMixin",
+    "oldgen.OverworldChunkGeneratorMixin",
     "SandstoneBlockMixin"
   ],
   "server": [
