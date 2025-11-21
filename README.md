@@ -33,13 +33,13 @@ This mod adds the ability to enable custom biome ore/soil feature distribution (
 |:---------------:|-------------|:--------------|:-------------|
 |   Rainforest    | Sandy       | 150% Dungeons | 50% Pumpkins |
 |     Plains      | Sedimentary | 150% Dirt     | 50% Gravel   |
-|     Swamps      | Clayey      | 150% Gravel   | 50% Gold     |
-|      Taiga      | Icy         | 150% Coal     | 75% Dirt     |
+|     Swamps      | Clayey      | 150% Coal     | 50% Gold     |
+|      Taiga      | Icy         | 150% Gravel   | 75% Redstone |
 |     Forest      | Normal      | 150% Iron     | 50% Lapis    |
-|     Desert      | Sandy       | 200% Gold     | 50% Roses    |
-|     Savanna     | Sandy       | 150% Redstone | 75% Dungeons |
-|     Tundra      | Icy         | 200% Diamonds | 75% Redstone |
-| Seasonal Forest | Normal      | 200% Lapis    | 75% Iron     |
+|     Desert      | Sandy       | 200% Lapis    | 50% Roses    |
+|     Savanna     | Sandy       | 200% Diamonds | 75% Dungeons |
+|     Tundra      | Icy         | 150% Redstone | 75% Dirt     |
+| Seasonal Forest | Normal      | 200% Gold     | 75% Iron     |
 |    Shrubland    | Sedimentary | 200% Pumpkins | 75% Coal     |
 |   Ice Desert    | Icy         | 200% Roses    | 50% Diamonds |
 
