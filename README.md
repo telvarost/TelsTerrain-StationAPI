@@ -3,11 +3,11 @@
 A StationAPI mod for Minecraft Beta 1.7.3 that tweaks ore generation, sand generation, and more!
 * Mod works on Multiplayer with [GlassConfigAPI](https://modrinth.com/mod/glass-config-api) version 3.0+ used to sync configs!
 * All changes are disabled by default, enable what you want!
+* NOTE: Terrain tweaks do not affect already generated chunks.
 
 ## Water and Lava Shaping
-
-* Water and Lava can be shaped using wooden bowls:
-  * Right click any water or lava block with a wooden bowl to lower its level
+This mod adds the ability to enable water and lava shaping using wooden bowls:
+* Right click any water or lava block with a wooden bowl to lower its level
   * Lava will consume the bowl when its level is lowered, bring a lot of bowls if you want to shape lava significantly
 
 ## Old Terrain Features
@@ -25,11 +25,9 @@ This mod adds the ability to disable any vanilla terrain decorations that you do
   * Small Plants: red mushrooms and brown mushrooms
 
 ## New Terrain Features
-Use [GlassConfigAPI](https://modrinth.com/mod/glass-config-api) to change generation settings.
-NOTE: Terrain tweaks do not affect already generated chunks.
-
-* Ability to enable custom biome feature distribution (pros/cons list):
-  * NOTE: Soil types only effect generation if their block generation is enabled (i.e. sand, sandstone, ice, and clay). Also note that cave soil blocks only generate between Y levels 0 and 47.
+This mod adds the ability to enable custom biome ore/soil feature distribution (pros/cons list):
+* NOTE: Soil types only effect generation if their block generation is enabled (i.e. sand, sandstone, ice, and clay).
+  * Also note that cave soil blocks only generate between Y levels 0 and 47.
 
 |      Biome      | Soil Type   | Pros          | Cons         |
 |:---------------:|-------------|:--------------|:-------------|
