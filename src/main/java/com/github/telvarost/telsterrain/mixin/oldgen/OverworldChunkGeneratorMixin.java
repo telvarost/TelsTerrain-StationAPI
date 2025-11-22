@@ -55,7 +55,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     public boolean telsTerrain_decorateDungeons(DungeonFeature instance, World world, Random random, int x, int y, int z, Operation<Boolean> original) {
-        if (!Config.config.OLD_TERRAIN_GENERATION.OVERWORLD_DUNGEON_AND_SOIL_FEATURES.DISABLE_OVERWORLD_DUNGEONS) {
+        if (!Config.config.OLD_TERRAIN_GENERATION.OVERWORLD_CAVE_AND_SOIL_FEATURES.DISABLE_OVERWORLD_DUNGEONS) {
             return original.call(instance, world, random, x, y, z);
         } else {
             return true;
@@ -71,7 +71,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     public boolean telsTerrain_decorateClayOreFeature(ClayOreFeature instance, World world, Random random, int x, int y, int z, Operation<Boolean> original) {
-        if (!Config.config.OLD_TERRAIN_GENERATION.OVERWORLD_DUNGEON_AND_SOIL_FEATURES.DISABLE_OVERWORLD_CLAY_DEPOSITS) {
+        if (!Config.config.OLD_TERRAIN_GENERATION.OVERWORLD_CAVE_AND_SOIL_FEATURES.DISABLE_OVERWORLD_CLAY_DEPOSITS) {
             return original.call(instance, world, random, x, y, z);
         } else {
             return true;
@@ -87,7 +87,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     public boolean telsTerrain_decorateOreFeatureDirt(OreFeature instance, World world, Random random, int x, int y, int z, Operation<Boolean> original) {
-        if (!Config.config.OLD_TERRAIN_GENERATION.OVERWORLD_DUNGEON_AND_SOIL_FEATURES.DISABLE_OVERWORLD_CAVE_DIRT) {
+        if (!Config.config.OLD_TERRAIN_GENERATION.OVERWORLD_CAVE_AND_SOIL_FEATURES.DISABLE_OVERWORLD_DIRT_DEPOSITS) {
             return original.call(instance, world, random, x, y, z);
         } else {
             return true;
@@ -103,7 +103,7 @@ public class OverworldChunkGeneratorMixin {
             )
     )
     public boolean telsTerrain_decorateOreFeatureGravel(OreFeature instance, World world, Random random, int x, int y, int z, Operation<Boolean> original) {
-        if (!Config.config.OLD_TERRAIN_GENERATION.OVERWORLD_DUNGEON_AND_SOIL_FEATURES.DISABLE_OVERWORLD_CAVE_GRAVEL) {
+        if (!Config.config.OLD_TERRAIN_GENERATION.OVERWORLD_CAVE_AND_SOIL_FEATURES.DISABLE_OVERWORLD_GRAVEL_DEPOSITS) {
             return original.call(instance, world, random, x, y, z);
         } else {
             return true;

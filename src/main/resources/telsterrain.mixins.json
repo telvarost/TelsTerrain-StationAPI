@@ -8,6 +8,8 @@
     "LiquidBlockMixin",
     "newgen.NetherChunkGeneratorMixin",
     "newgen.OverworldChunkGeneratorMixin",
+    "oldgen.CaveCarverMixin",
+    "oldgen.NetherCaveCarverMixin",
     "oldgen.NetherChunkGeneratorMixin",
     "oldgen.OverworldChunkGeneratorMixin",
     "SandstoneBlockMixin"

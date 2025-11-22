@@ -84,9 +84,9 @@ public class Config {
         public NetherFeatures NETHER_FEATURES = new NetherFeatures();
 
         @ConfigCategory(
-                name = "Overworld Dungeon And Soil Features"
+                name = "Overworld Cave And Soil Features"
         )
-        public OverworldDungeonAndSoilFeatures OVERWORLD_DUNGEON_AND_SOIL_FEATURES = new OverworldDungeonAndSoilFeatures();
+        public OverworldCaveAndSoilFeatures OVERWORLD_CAVE_AND_SOIL_FEATURES = new OverworldCaveAndSoilFeatures();
 
         @ConfigCategory(
                 name = "Overworld Fluid Features"
@@ -110,6 +110,12 @@ public class Config {
     }
 
     public static class NetherFeatures {
+        @ConfigEntry(
+                name = "Disable Nether Caves",
+                multiplayerSynced = true
+        )
+        public Boolean DISABLE_NETHER_CAVES = false;
+
         @ConfigEntry(
                 name = "Disable Nether Fire Patches",
                 multiplayerSynced = true
@@ -147,18 +153,24 @@ public class Config {
         public Boolean DISABLE_NETHER_LAVAFALLS = false;
     }
 
-    public static class OverworldDungeonAndSoilFeatures {
+    public static class OverworldCaveAndSoilFeatures {
         @ConfigEntry(
-                name = "Disable Overworld Cave Dirt",
+                name = "Disable Overworld Caves",
                 multiplayerSynced = true
         )
-        public Boolean DISABLE_OVERWORLD_CAVE_DIRT = false;
+        public Boolean DISABLE_OVERWORLD_CAVES = false;
 
         @ConfigEntry(
-                name = "Disable Overworld Cave Gravel",
+                name = "Disable Overworld Dirt Deposits",
                 multiplayerSynced = true
         )
-        public Boolean DISABLE_OVERWORLD_CAVE_GRAVEL = false;
+        public Boolean DISABLE_OVERWORLD_DIRT_DEPOSITS = false;
+
+        @ConfigEntry(
+                name = "Disable Overworld Gravel Deposits",
+                multiplayerSynced = true
+        )
+        public Boolean DISABLE_OVERWORLD_GRAVEL_DEPOSITS = false;
 
         @ConfigEntry(
                 name = "Disable Overworld Clay Deposits",
