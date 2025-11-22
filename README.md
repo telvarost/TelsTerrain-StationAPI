@@ -13,12 +13,13 @@ This mod adds the ability to enable water and lava shaping using wooden bowls:
 ## Old Terrain Features
 This mod adds the ability to disable any vanilla terrain decorations that you don't want!
 * For the Overworld you can now disable:
-  * Dungeon & Soil Features: dungeons, cave dirt, cave gravel, and beach clay
+  * Cave & Soil Features: caves/tunnels, dungeons, dirt deposits, gravel deposits, and beach clay
   * Fluid Features: waterfalls, lavafalls, ponds of water, and ponds of lava
   * Ores: Coal, iron, gold, diamond, lapis lazuli, and redstone
   * Small Plants: dandelions, roses, tall grass, dead bushes, sugar cane, cacti, red mushrooms, and brown mushrooms
   * Trees: small oak, large oak, birch, and pine
 * For the Nether you can now disable:
+  * Tunnels
   * Lava Springs/Lavafalls
   * Fire Patches
   * Glowstone Clusters: A & B
